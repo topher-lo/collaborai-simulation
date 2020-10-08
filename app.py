@@ -32,10 +32,10 @@ def main():
     st.title("Dashboards")
 
     ### Sidebar
-    st.sidebar.title("collabor.ai's PyPoET Simulation")
+    st.sidebar.title("collabor.ai's PyPoP Simulation")
     st.sidebar.markdown(
         """
-        ## PoET Protocol Puzzle:
+        ## PoP Protocol Puzzle:
         Insurance claims default probability.
         """
     )
