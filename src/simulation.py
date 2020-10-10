@@ -97,9 +97,8 @@ def train_model(y, data, N, T, model, SEED=42):
     results = pd.DataFrame(np.array(scores))
     results['Ensemble'] = np.array(ensemble_scores)
     results = pd.concat([results, pd.DataFrame(np.array(weights))], axis=1)
-    results.columns = [f'Player_{i}' for i in range(N)] + ['Ensemble'] + [f'Player_{i}' for i in range(N)]
+    results.columns = [f'Score_{i}' for i in range(N)] + ['Ensemble'] + [f'Weight_{i}' for i in range(N)]
     results.to_csv(f'logs/weights_{N}_{T}.csv', index=False)
-    
     return results
 
 

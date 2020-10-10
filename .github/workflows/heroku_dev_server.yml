@@ -3,8 +3,6 @@ name: Push Container to Development Server
 on:
     push:
         branches: [ develop ]
-    pull_request:
-        branches: [ develop ]
     
 jobs:
     dev_server:
