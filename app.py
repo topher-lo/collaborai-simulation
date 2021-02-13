@@ -39,7 +39,7 @@ def main():
     st.sidebar.title("collabor.ai Simulation")
     st.sidebar.markdown(
         """
-        ## PoP Puzzle:
+        ## ML Task:
         Insurance claims default probability.
         """
     )
