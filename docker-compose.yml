@@ -5,6 +5,8 @@ services:
         build:
             dockerfile: ./Dockerfile
             context: .
+        volumes:
+          - .:/home/app/webapp
         environment:
             - PORT=${PORT}
         ports:
